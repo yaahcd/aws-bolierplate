@@ -1,0 +1,22 @@
+{
+  "name": "aws-localstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "npx nodemon --exec npm run offline",
+    "offline": "npx sls offline start --host 0.0.0.0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1460.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "serverless": "^3.35.2",
+    "serverless-offline": "^9.3.1"
+  }
+}
