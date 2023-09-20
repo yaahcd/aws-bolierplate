@@ -2,7 +2,6 @@ const {S3} = require('./factory')
 
 module.exports.handler = async (event) => {
   const allBuckets = await S3.listBuckets().promise()
-  console.log('found', allBuckets);
 
   return {
     statusCode: 200,
