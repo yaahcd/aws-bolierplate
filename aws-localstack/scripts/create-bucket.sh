@@ -1,7 +1,9 @@
-BUCKET_NAME=000000
+BUCKET_NAME=testeaws
 
 aws \
-  s3 mb s3://$BUCKET_NAME 
+  s3 mb s3://$BUCKET_NAME \
+  --endpoint-url=http://localhost:4566
 
 aws \
-  s3 ls
+  s3 ls \
+  --endpoint-url=http://localhost:4566
